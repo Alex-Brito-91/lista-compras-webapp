@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed&family=Sofia+Sans+Semi+Condensed&display=swap')
+	;
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@200;400&family=Sofia+Sans+Semi+Condensed&display=swap')
+	;
+
+@media only screen and (max-width: 600px) {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		text-decoration: none;
+	}
+	body {
+		font-size: 100%;
+		background-color: #AED6F1;
+	}
+	.cabecalho-saldo {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 20px;
+	}
+	.cabecalho-imagem-saldo {
+		height: 75px;
+		width: 35%;
+		padding-botton: 10px;
+	}
+	.cabecalho-menu-saldo {
+		display: flex;
+		gap: 32px;
+	}
+	.cabecalho-menu-item-saldo {
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-weight: 400;
+		font-size: 25px;
+		color: #000000;
+	}
+	.cabecalho-menu-item-saldo:hover {
+		color: #45B606;
+	}
+	.conteudo {
+		margin-bottom: 48px;
+		border-top: 0.4px solid #45B606;
+		padding: 30px;
+	}
+	.conteudo-principal {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.conteudo-principal-div {
+		padding: 10px;
+		width: 90%;
+		max-width: 400px;
+		height: auto;
+		background-color: #91F689;
+		border: 1px solid #084D02;
+		border-radius: 20px;
+	}
+	.conteudo-principal-tema {
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-weight: 500;
+		font-size: 40px;
+		text-align: center;
+		padding: 20px;
+	}
+	.conteudo-principal-form {
+		align-items: center;
+		font-family: FreeMono, monospace;
+		font-size: 19px;
+		display: flex;
+		flex-direction: column;
+	}
+	.div-input-alimentacao1,
+	.div-input-alimentacao2,
+	.div-input-dinheiro {
+		width: 90%;
+		max-width: 400px;
+		text-align: center;
+	}
+	.conteudo-principal-input-alimentacao1,
+	.conteudo-principal-input-alimentacao2,
+	.conteudo-principal-input-dinheiro {
+		border-radius: 5px;
+		border: 1px solid #084D02;
+		width: 35%;
+		height: 28px;
+		background-color: #FFFFFF;
+		color: #000000;
+		padding-left: 40px;
+		margin-top: 10px;
+		padding-left: 36px;
+	}
+	.section-botao-cadastrar {
+		padding: 30px;
+	}
+	.botao-cadastrar {
+		font-family: FreeMono, monospace;
+		font-size: 19px;
+		width: 100%;
+		height: 40px;
+		border: none;
+		border-radius: 10px;
+		background-color: #0E7405;
+		color: #FFFFFF;
+	}
+	.rodape {
+		margin-bottom: 32px;
+		border-top: 0.4px solid #45B606;
+		padding: 10px;
+	}
+}
