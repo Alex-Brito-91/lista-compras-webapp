@@ -37,9 +37,7 @@
 						<br>Dinheiro<br>
 						<input class="conteudo-principal-input-dinheiro" type="text" name="dinheiro" value="0"/><br />
 					</div>
-					<section class="section-botao-cadastrar">
-						<input class="botao-cadastrar" type="submit" value="cadastrar" />
-					</section>
+					<input class="botao-cadastrar" type="submit" value="cadastrar" />
 				</form>
 			</div>
 		</section>

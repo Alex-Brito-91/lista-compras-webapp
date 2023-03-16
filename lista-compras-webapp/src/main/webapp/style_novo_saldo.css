@@ -26,38 +26,40 @@
 		padding: 20px;
 	}
 	.cabecalho-imagem-saldo {
+		margin-top: 10px;
 		height: 75px;
 		width: 35%;
-		padding-botton: 10px;
+		padding-left: 10px;
 	}
 	.cabecalho-menu-saldo {
 		display: flex;
-		gap: 32px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
 	}
 	.cabecalho-menu-item-saldo {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
 		font-weight: 400;
 		font-size: 25px;
+		text-align: center;
 		color: #000000;
+		margin-top: 10px;
 	}
 	.cabecalho-menu-item-saldo:hover {
 		color: #45B606;
 	}
 	.conteudo {
-		margin-bottom: 48px;
 		border-top: 0.4px solid #45B606;
 		padding: 30px;
 	}
 	.conteudo-principal {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
 		align-items: center;
 	}
 	.conteudo-principal-div {
-		padding: 10px;
-		width: 90%;
-		max-width: 400px;
+		width: 100%;
+		max-width: 500px;
 		height: auto;
 		background-color: #91F689;
 		border: 1px solid #084D02;
@@ -71,16 +73,15 @@
 		padding: 20px;
 	}
 	.conteudo-principal-form {
+		display: flex;
+		flex-direction: column;
 		align-items: center;
 		font-family: FreeMono, monospace;
 		font-size: 19px;
-		display: flex;
-		flex-direction: column;
 	}
 	.div-input-alimentacao1,
 	.div-input-alimentacao2,
 	.div-input-dinheiro {
-		width: 90%;
 		max-width: 400px;
 		text-align: center;
 	}
@@ -89,30 +90,27 @@
 	.conteudo-principal-input-dinheiro {
 		border-radius: 5px;
 		border: 1px solid #084D02;
-		width: 35%;
+		width: 50%;
 		height: 28px;
 		background-color: #FFFFFF;
 		color: #000000;
-		padding-left: 40px;
-		margin-top: 10px;
-		padding-left: 36px;
-	}
-	.section-botao-cadastrar {
-		padding: 30px;
+		margin-top: 15px;
+		text-align: center;
+		font-size: 16px;
 	}
 	.botao-cadastrar {
+		margin-top: 30px;
 		font-family: FreeMono, monospace;
 		font-size: 19px;
-		width: 100%;
+		width: 35%;
 		height: 40px;
 		border: none;
 		border-radius: 10px;
 		background-color: #0E7405;
 		color: #FFFFFF;
+		margin-bottom: 30px;
 	}
 	.rodape {
-		margin-bottom: 32px;
 		border-top: 0.4px solid #45B606;
-		padding: 10px;
 	}
 }
