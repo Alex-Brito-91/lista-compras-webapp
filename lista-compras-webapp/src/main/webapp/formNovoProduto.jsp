@@ -26,9 +26,9 @@
 		<section class="conteudo-cadastro">
 			<div class="conteudo-cadastro-div">
 				<div class="conteudo-compra-div">
-					<p>Saldo total: <em>${saldo}</em> </p>
-					<p>Valor total da Compra: <em>${total}</em> </p>
-					<p>Saldo restante: <em>${restante}</em> </p>
+					<p>Saldo total: <b>${saldo}</b> </p>
+					<p>Valor total da Compra: <b>${total}</b> </p>
+					<p>Saldo restante: <b>${restante}</b> </p>
 				</div>
 				<form class="conteudo-cadastro-form" action="${linkServletNovoProduto}" method="post">
 					<h1 class="conteudo-cadastro-tema">Produtos</h1>
