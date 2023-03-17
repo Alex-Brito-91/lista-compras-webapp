@@ -9,7 +9,6 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
-
 body {
 	font-size: 100%;
 	background-color: #AED6F1;
@@ -74,10 +73,6 @@ body {
 	color: #000000;
 	padding-left: 25px;
 }
-
-.conteudo-altera-botoes {
-}
-
 .conteudo-altera-input {
 	font-family: FreeMono, monospace;
  	font-size: 19px;
