@@ -31,25 +31,22 @@
 						<tr class="conteudo-alimentacao1">
 							<th class="tema-alimentacao">ALIMENTAÇÃO 1:</th>
 							<td class="valor-saldo">${saldo.alimentacao1}</td>
-							<td class="conteudo-tabela-alterar">
-								<a href="/lista-compras-webapp/mostraSaldo?id=${saldo.id}">
-									<input class="botao-alterar" type="button" value="alterar"/>
+							<td class="conteudo-altera-botoes"rowspan="3">
+								<a href="/lista-compras-webapp/mostraSaldo?id=${saldo.id}"> 
+									<input class="botao-alterar" type="button"/><img src="imagens/editar24px.png" alt="logo editar">
+								</a>
+								<a href="/lista-compras-webapp/removeSaldo?id=${saldo.id}"> 
+									<input class="botao-excluir" type="button"/><img src="imagens/excluir24px.png" alt="logo excluir">
 								</a>
 							</td>
 						</tr>
 						<tr class="conteudo-alimentacao2">
 							<th class="tema-alimentacao">ALIMENTAÇÃO 2:</th>
 							<td class="valor-saldo">${saldo.alimentacao2}</td>
-							<td class="conteudo-tabela-excluir">
-								<a href="/lista-compras-webapp/removeSaldo?id=${saldo.id}">
-									<input class="botao-excluir" type="button" value="excluir"/>
-								</a>
-							</td>
 						</tr>
 						<tr class="conteudo-dinheiro">
 							<th class="tema-alimentacao-dinheiro">DINHEIRO:</th>
 							<td class="valor-saldo-dinheiro">${saldo.dinheiro}</td>
-							<td class="conteudo-tabela-vazio"></td>
 						</tr>
 					</c:forEach>
 				</table>

@@ -69,7 +69,7 @@
 	}
 	.conteudo-principal-tabela-tema {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
-		font-weight: 400;
+		font-weight: bold;
 		font-size: 40px;
 		padding: 5px;
 		text-align: center;
@@ -89,8 +89,7 @@
 	}
 	.conteudo-alimentacao1,
 	.conteudo-alimentacao2,
-	.conteudo-dinheiro,
-	.itens-conteudo-opcoes {
+	.conteudo-dinheiro {
 		text-align: right;
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
 		font-size: 26px;
@@ -101,41 +100,15 @@
 		border-bottom: 1px solid black;
 		padding-right: 26px;
 	}
-	.conteudo-tabela-alterar,
-	.conteudo-tabela-excluir {
-		text-align: right;
+	.botao-alterar,
+	.botao-excluir {
+		padding-right: 10px;
+		border: none;
+		background-color: white;
 	}
 	.tema-alimentacao,
-	.valor-saldo,
-	.conteudo-tabela-alterar,
-	.conteudo-tabela-excluir {
+	.valor-saldo {
 		padding-right: 26px;
-	}
-	.botao-alterar {
-		font-family: 'Sofia Sans Extra Condensed', sans-serif;
-		color: #FFFFFF;
-		background-color: #0E7405;
-		border-radius: 10px;
-		border: none;
-		font-size: 25px;
-		width: 150%;
-	}
-	.botao-excluir {
-		font-family: 'Sofia Sans Extra Condensed', sans-serif;
-		color: #FFFFFF;
-		background-color: #0E7405;
-		border-radius: 10px;
-		border: none;
-		font-size: 25px;
-		width: 150%;
-	}
-	.botao-alterar:hover {
-		color: #01A9DB;
-		background-color: #15969D;
-	}
-	.botao-excluir:hover {
-		color: #FF0000;
-		background-color: #15969D;
 	}
 	.conteudo-principal-tabela-total {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
