@@ -32,7 +32,7 @@
 							<th class="tema-alimentacao">ALIMENTAÇÃO 1:</th>
 							<td class="valor-saldo">${saldo.alimentacao1}</td>
 							<td class="conteudo-tabela-alterar">
-								<a href="/gerenciador/mostraSaldo?id=${saldo.id}">
+								<a href="/lista-compras-webapp/mostraSaldo?id=${saldo.id}">
 									<input class="botao-alterar" type="button" value="alterar"/>
 								</a>
 							</td>
@@ -41,7 +41,7 @@
 							<th class="tema-alimentacao">ALIMENTAÇÃO 2:</th>
 							<td class="valor-saldo">${saldo.alimentacao2}</td>
 							<td class="conteudo-tabela-excluir">
-								<a href="/gerenciador/removeSaldo?id=${saldo.id}">
+								<a href="/lista-compras-webapp/removeSaldo?id=${saldo.id}">
 									<input class="botao-excluir" type="button" value="excluir"/>
 								</a>
 							</td>
@@ -54,16 +54,14 @@
 					</c:forEach>
 				</table>
 				<h2 class="conteudo-principal-tabela-total">
-					Saldo Total: <b><em>${saldoTotal}</em></b><br>
+					Saldo Total: <b>${saldoTotal}</b><br>
 				</h2>
-				<section class="section-botao-voltar">
-					<a href="formNovoSaldo.jsp">
-						<input class="botao-cadastro-saldo" type="button" value="inserir saldo" />
-					</a><br>
-					<a href="paginaCadastroTotais">
-						<input class="botao-cadastro" type="button" value="cadastrar produtos" />
-					</a>
-				</section>
+				<a href="formNovoSaldo.jsp">
+					<input class="botao-cadastro-saldo" type="button" value="inserir saldo"/>
+				</a><br>
+				<a href="paginaCadastroTotais">
+					<input class="botao-cadastro" type="button" style="white-space: pre-wrap;" value="cadastrar produtos"/>
+				</a>
 			</div>
 		</section>
 	</main>

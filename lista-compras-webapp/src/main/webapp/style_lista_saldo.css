@@ -65,20 +65,24 @@
 		background-color: #91F689;
 		border: 1px solid #084D02;
 		border-radius: 20px;
+		text-align: center;
 	}
 	.conteudo-principal-tabela-tema {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
 		font-weight: 400;
 		font-size: 40px;
-		padding: 20px;
+		padding: 5px;
 		text-align: center;
 	}
 	.tabela {
 		display: flex;
-		flex-direction: row;
-		padding: 20px;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		padding: 10px;
 		width: 100%;
-		max-width: 600px;
+		max-width: 500px;
+		height: auto;
 		background-color: white;
 		border-radius: 10px;
 		border: 1px solid #B89600;
@@ -89,14 +93,13 @@
 	.itens-conteudo-opcoes {
 		text-align: right;
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
-		font-size: 20px;
-		width: 100%;
+		font-size: 26px;
 	}
 	.tema-alimentacao-dinheiro,
 	.valor-saldo-dinheiro,
 	.conteudo-tabela-vazio {
 		border-bottom: 1px solid black;
-		padding-right: 20px;
+		padding-right: 26px;
 	}
 	.conteudo-tabela-alterar,
 	.conteudo-tabela-excluir {
@@ -106,7 +109,7 @@
 	.valor-saldo,
 	.conteudo-tabela-alterar,
 	.conteudo-tabela-excluir {
-		padding-right: 20px;
+		padding-right: 26px;
 	}
 	.botao-alterar {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -114,7 +117,7 @@
 		background-color: #0E7405;
 		border-radius: 10px;
 		border: none;
-		font-size: 20px;
+		font-size: 25px;
 		width: 150%;
 	}
 	.botao-excluir {
@@ -123,14 +126,16 @@
 		background-color: #0E7405;
 		border-radius: 10px;
 		border: none;
-		font-size: 20px;
+		font-size: 25px;
 		width: 150%;
 	}
 	.botao-alterar:hover {
 		color: #01A9DB;
+		background-color: #15969D;
 	}
 	.botao-excluir:hover {
 		color: #FF0000;
+		background-color: #15969D;
 	}
 	.conteudo-principal-tabela-total {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
@@ -145,17 +150,37 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	.botao-cadastro, .botao-cadastro-saldo {
-		margin-bottom: 15px;
+	.botao-cadastro-saldo {
 		padding: 5px;
 		font-family: FreeMono, monospace;
 		font-size: 19px;
-		width: 100%;
+		width: 50%;
 		height: 40px;
 		border: none;
 		border-radius: 15px;
 		background-color: #0E7405;
 		color: #FFFFFF;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.botao-cadastro-saldo:hover {
+		background-color: #15969D;
+	}
+	.botao-cadastro {
+		padding: 5px;
+		font-family: FreeMono, monospace;
+		font-size: 19px;
+		text-align: center;
+		width: 50%;
+		height: 60px;
+		border: none;
+		border-radius: 15px;
+		background-color: #0E7405;
+		color: #FFFFFF;
+		margin: 0 auto;
+	}
+	.botao-cadastro:hover {
+		background-color: #15969D;
 	}
 	.rodape {
 		border-top: 0.4px solid #45B606;
