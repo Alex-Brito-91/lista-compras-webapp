@@ -33,10 +33,8 @@
 						<input class="conteudo-principal-input-dinheiro" type="text" name="dinheiro" value="${saldo.dinheiro}" /><br />
 					</div>
 					<input type="hidden" name="id" value="${saldo.id}"><br>
-					<div class="conteudo-altera-botoes">
-						<input class="conteudo-altera-input" type="submit" value="alterar" /><br>
-						<button class="conteudo-altera-voltar" onclick="history.back()">voltar</button>
-					</div>
+					<input class="conteudo-altera-input" type="submit" value="alterar" /><br>
+					<button class="conteudo-altera-voltar" onclick="history.back()">voltar</button>
 				</form>
 			</div>
 		</section>

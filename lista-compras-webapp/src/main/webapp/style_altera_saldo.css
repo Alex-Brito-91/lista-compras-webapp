@@ -1,103 +1,110 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed&family=Sofia+Sans+Semi+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@200;400&family=Sofia+Sans+Semi+Condensed&display=swap');
 
+@import
+	url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed&family=Sofia+Sans+Semi+Condensed&display=swap')
+	;
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	text-decoration: none;
-}
-body {
-	font-size: 100%;
-	background-color: #AED6F1;
-}
+@import
+	url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@200;400&family=Sofia+Sans+Semi+Condensed&display=swap')
+	;
 
-.cabecalho-saldo {
-	padding: 20px;
-}
-
-.cabecalho-imagem-saldo {
-	height: 75px;
-}
-
-.conteudo {
-	margin-bottom: 48px;
-	border-top: 0.4px solid #45B606;
-	padding: 30px;
-	text-align: center;
-}
-
-.conteudo-principal {
-	display: flex;
-	flex-direction: row;
-}
-
-.conteudo-principal-div {
-	padding: 10px;
-	width: 400px;
-	height: 450px;
-	background-color: #FFFA8C;	
-	border: 1px solid #DBC700;
-	border-radius: 20px;
-}
-
-.conteudo-principal-tema {
-	font-family: 'Sofia Sans Extra Condensed', sans-serif;
-	font-weight: 500;
-	font-size: 40px;
-	padding: 20px;
-	text-align: center;
-}
-
-.conteudo-principal-form {
-	font-family: FreeMono, monospace;
-	font-size: 19px;
-}
-
-.div-input-alimentacao1,
-.div-input-alimentacao2,
-.div-input-dinheiro {
-	margin: 20px;
-}
-
-.conteudo-principal-input-alimentacao1,
-.conteudo-principal-input-alimentacao2,
-.conteudo-principal-input-dinheiro {
-	border-radius: 5px;
-	border: 1px solid #084D02;
-	width: 80px;
-	height: 25px;
-	background-color: #FFFFFF;
-	color: #000000;
-	padding-left: 25px;
-}
-.conteudo-altera-input {
-	font-family: FreeMono, monospace;
- 	font-size: 19px;
- 	border: none;
-  	border-radius: 10px;
-  	width: 30%;
-  	height: 30px;
-  	background-color: #45B606;
-  	color: #FFFFFF;
-  	margin-bottom: 20px;
-}
-
-.conteudo-altera-voltar {
-	font-family: FreeMono, monospace;
- 	font-size: 19px;
- 	border: none;
-  	border-radius: 10px;
-  	width: 30%;
-  	height: 30px;
-  	background-color: #45B606;
-  	color: #FFFFFF;
-  	margin-bottom: 20px;
-}
-
-.rodape {
-	margin-bottom: 32px;
-	border-top: 0.4px solid #45B606;
+@media only screen and (max-width: 600px) {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		text-decoration: none;
+	}
+	body {
+		font-size: 100%;
+		background-color: #AED6F1;
+	}
+	.cabecalho-saldo {
+		display: flex;
+		flex-direction: row;
+		align-items: left;
+		padding: 20px;
+	}
+	.cabecalho-imagem-saldo {
+		margin-top: 10px;
+		height: 75px;
+		width: 35%;
+		padding-left: 10px;
+	}
+	.conteudo {
+		border-top: 0.4px solid #45B606;
+		padding: 30px;
+	}
+	.conteudo-principal {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.conteudo-principal-div {
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+		background-color: #FFFA8C;
+		border: 1px solid #DBC700;
+		border-radius: 20px;
+	}
+	.conteudo-principal-tema {
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-weight: 500;
+		font-size: 40px;
+		text-align: center;
+		padding: 20px;
+	}
+	.conteudo-principal-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-size: 28px;
+	}
+	.div-input-alimentacao1,
+	.div-input-alimentacao2,
+	.div-input-dinheiro {
+		max-width: 400px;
+		text-align: center;
+	}
+	.conteudo-principal-input-alimentacao1,
+	.conteudo-principal-input-alimentacao2,
+	.conteudo-principal-input-dinheiro {
+		border-radius: 5px;
+		border: 1px solid #084D02;
+		width: 50%;
+		height: 28px;
+		background-color: #FFFFFF;
+		color: #000000;
+		margin-top: 5px;
+		text-align: center;
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	.conteudo-altera-input {
+		font-family: FreeMono, monospace;
+		font-size: 19px;
+		width: 35%;
+		height: 40px;
+		border: none;
+		border-radius: 10px;
+		background-color: #45B606;
+		color: #FFFFFF;
+	}
+	.conteudo-altera-voltar {
+		font-family: FreeMono, monospace;
+		font-size: 19px;
+		width: 35%;
+		height: 40px;
+		border: none;
+		border-radius: 10px;
+		background-color: #45B606;
+		color: #FFFFFF;
+		margin-bottom: 25px;
+	}
+	.rodape {
+		margin-bottom: 32px;
+		border-top: 0.4px solid #45B606;
+	}
 }
