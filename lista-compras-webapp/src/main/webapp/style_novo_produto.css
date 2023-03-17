@@ -26,57 +26,56 @@
 		padding: 20px;
 	}
 	.cabecalho-imagem {
+		margin-top: 10px;
 		height: 75px;
 		width: 35%;
-		padding-botton: 10px;
+		padding-left: 10px;
 	}
 	.cabecalho-menu {
-		display: flex;
-		gap: 32px;
-	}
-	.cabecalho-menu-item {
-		font-family: 'Sofia Sans Extra Condensed', sans-serif;
-		font-weight: 400;
-		font-size: 25px;
-		color: #000000;
-	}
-	.cabecalho-menu-item:hover {
-		color: #45B606;
-	}
-	.conteudo {
-		margin-bottom: 48px;
-		border-top: 0.4px solid #45B606;
-		padding: 30px;
-	}
-	.conteudo-cadastro {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-around;
 	}
+	.cabecalho-menu-item {
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-weight: 400;
+		font-size: 25px;
+		text-align: center;
+		color: #000000;
+		margin-top: 10px;
+	}
+	.cabecalho-menu-item:hover {
+		color: #45B606;
+	}
+	.conteudo {
+		border-top: 0.4px solid #45B606;
+		padding: 30px;
+	}
+	.conteudo-cadastro {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	.conteudo-compra-div {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
 		font-size: 25px;
-		padding: 20px;
+		text-align: left;
 		width: 100%;
 		max-width: 400px;
-		height: 130px;
-		background-color: #91F689;
+		height: auto;
+		background-color: white;
 		border: 1px solid #084D02;
 		border-radius: 20px;
+		padding: 20px;
 		margin-bottom: 30px;
-	}
-	.conteudo-compra-texto {
-		text-align: left;
-		width: 330px;
-		height: 130px;
 	}
 	.conteudo-cadastro-div {
 		padding: 20px;
 		width: 100%;
-		max-width: 600px;
-		height: 100%;
-		background-color: #7CFC92;
+		max-width: 500px;
+		height: auto;
+		background-color: #91F689;
 		border: 1px solid #084D02;
 		border-radius: 20px;
 	}
@@ -84,59 +83,59 @@
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
 		font-weight: 500;
 		font-size: 40px;
-		margin-left: 30px;
+		margin-bottom: 20px;
 	}
 	.conteudo-cadastro-form {
-		font-family: FreeMono, monospace;
-		font-size: 19px;
-	}
-	.div-input-nome {
-		margin: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-size: 25px;
+		padding: 10px;
 	}
 	.conteudo-cadastro-input-nome {
 		border-radius: 5px;
+		text-align: center;
+		font-size: 16px;
 		border: 1px solid #084D02;
-		width: 150px;
+		width: 60%;
 		height: 25px;
 		background-color: #FFFFFF;
 		color: #000000;
-	}
-	.div-input-valor {
-		margin: 30px;
+		margin-bottom: 20px;
 	}
 	.conteudo-cadastro-input-valor {
 		border-radius: 5px;
-		width: 80px;
+		text-align: center;
+		font-size: 16px;
+		width: 35%;
 		height: 25px;
 		background-color: #FFFFFF;
 		border: 1px solid #084D02;
 		color: #000000;
-	}
-	.div-input-quant {
-		margin: 30px;
+		margin-bottom: 20px;
 	}
 	.conteudo-cadastro-input-quant {
 		border-radius: 5px;
-		width: 50px;
+		text-align: center;
+		font-size: 16px;
+		width: 20%;
 		height: 25px;
 		background-color: #FFFFFF;
 		border: 1px solid #084D02;
 		color: #000000;
-	}
-	.conteudo-cadastro-botao {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
+		margin-bottom: 20px;
 	}
 	.botao-input-cadastrar {
 		font-family: FreeMono, monospace;
 		font-size: 19px;
+		color: white;
 		border: none;
 		border-radius: 10px;
 		background-color: #0E7405;
-		width: 130px;
+		width: 40%;
 		height: 40px;
+		margin: 0 auto;
 	}
 	.botao-input-cadastrar:hover {
 		background-color: #15969D;
@@ -144,17 +143,18 @@
 	.botao-input-lista {
 		font-family: FreeMono, monospace;
 		font-size: 19px;
+		color: white;
 		border: none;
 		border-radius: 10px;
 		background-color: #0E7405;
-		width: 130px;
+		width: 40%;
 		height: 40px;
+		margin: 0 auto;
 	}
 	.botao-input-lista:hover {
 		background-color: #15969D;
 	}
 	.rodape {
-		padding: 32px;
 		border-top: 0.4px solid #45B606;
 	}
 }

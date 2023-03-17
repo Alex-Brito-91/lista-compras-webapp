@@ -26,14 +26,12 @@
 		<section class="conteudo-cadastro">
 			<div class="conteudo-cadastro-div">
 				<div class="conteudo-compra-div">
-					<div class="conteudo-compra-texto">
-						<p>Saldo total: <em>${saldo}</em> </p>
-						<p>Valor total da Compra: <em>${total}</em> </p>
-						<p>Saldo restante: <em>${restante}</em> </p>
-					</div>
+					<p>Saldo total: <em>${saldo}</em> </p>
+					<p>Valor total da Compra: <em>${total}</em> </p>
+					<p>Saldo restante: <em>${restante}</em> </p>
 				</div>
-				<h1 class="conteudo-cadastro-tema">Produtos</h1>
 				<form class="conteudo-cadastro-form" action="${linkServletNovoProduto}" method="post">
+					<h1 class="conteudo-cadastro-tema">Produtos</h1>
 					<div class="div-input-nome">
 						Nome<br>
 						<input class="conteudo-cadastro-input-nome" type="text" name="nome" /> 
@@ -48,12 +46,8 @@
 						Quantidade<br>
 						<input class="conteudo-cadastro-input-quant" type="text" name="quant" />
 					</div>
-					<section class="conteudo-cadastro-botao">
-						<input class="botao-input-cadastrar" type="submit" value="cadastrar" />
-						<a href="listaProdutos">
-							<input class="botao-input-lista" type="button" value="ver lista" />
-						</a>
-					</section>
+					<input class="botao-input-cadastrar" type="submit" value="cadastrar" /><br>
+					<button class="botao-input-lista" formaction="listaProdutos">ver lista</button>
 				</form>
 			</div>
 		</section>
