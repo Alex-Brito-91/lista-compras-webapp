@@ -14,12 +14,12 @@
 <body>
 	<header class="cabecalho">
 		<a class="cabecalho-imagem" href="paginaInicial.jsp"> <img src="imagens/shopping-basket.png" alt="logo do carrinho"></a>
-		<nav class="cabecalho-menu">
-			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página Inicial</a> 
+		<nav class="cabecalho-menu"> 
+			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página Inicial</a>
 			<a class="cabecalho-menu-item" href="listaSaldo">Seu Saldo</a>
 			<a class="cabecalho-menu-item" href="paginaCadastroTotais">Cadastro de Produtos</a>
 			<a href="limpaLista">
-				<input class="botao-limpar-lista" type="button" value="Limpar Lista"/>
+				<input class="botao-limpar-lista" type="button" value="Limpar lista"/>
 			</a>
 		</nav>
 	</header>
@@ -28,8 +28,8 @@
 		<section class="conteudo-principal-tabela">
 			<div class="conteudo-principal-tabela-div">
 				<h1 class="conteudo-principal-tabela-tema">LISTA DE PRODUTOS</h1>
-				<h2 > Lista Criada em: 
-					<em><fmt:formatDate value="${data}" pattern="dd/MM/yyyy"/></em>
+				<h2 class="conteudo-principal-tema-data"> Lista criada em: 
+					<fmt:formatDate value="${data}" pattern="dd/MM/yyyy"/>
 				</h2>
 				<table class="tabela">
 					<thead>
@@ -50,19 +50,19 @@
 								<td class="conteudo-tabela">${produto.quantidade}</td>
 								<td class="conteudo-tabela">${produto.getValorTotalString()}</td>
 								<td class="conteudo-tabela">
-									<a class="botao-alterar"href="/gerenciador/mostraProduto?id=${produto.id}">alterar</a>
+									<a class="botao-alterar"href="/lista-compras-webapp/mostraProduto?id=${produto.id}"><img src="imagens/editar.png" alt="logo editar"> </a>
 								</td>
 								<td class="conteudo-tabela">
-									<a class="botao-excluir"href="/gerenciador/removeProduto?id=${produto.id}">excluir</a>
+									<a class="botao-excluir"href="/lista-compras-webapp/removeProduto?id=${produto.id}"><img src="imagens/excluir.png" alt="logo excluir"> </a>
 								</td>
 							</tr>
 						</c:forEach>
 					</tbody>
 				</table>
 				<h3 class="conteudo-principal-tabela-total">
-					Total da compra: <em>${totalCompra}</em><br>
-					Saldo Total: <em>${saldoTotal}</em><br>
-					Saldo Restante: <em>${totalRestante}</em>
+					Total da compra: <b>${totalCompra}</b><br>
+					Saldo Total: <b>${saldoTotal}</b><br>
+					Saldo Restante: <b>${totalRestante}</b>
 				</h3>
 				<section class="section-botoes">
 					<a href="paginaCadastroTotais">
