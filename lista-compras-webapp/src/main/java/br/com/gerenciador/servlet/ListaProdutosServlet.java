@@ -1,12 +1,9 @@
 package br.com.gerenciador.servlet;
 
 import java.io.IOException;
-
-import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.List;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -36,6 +33,7 @@ public class ListaProdutosServlet extends HttpServlet {
 		request.setAttribute("saldoTotal", saldoF);
 		request.setAttribute("totalRestante", restanteF);
 		
+		response.setContentType("text/html; charset=UTF-8");
 		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos.jsp");
 		rd.forward(request, response);
 		

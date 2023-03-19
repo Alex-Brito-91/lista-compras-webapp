@@ -25,6 +25,7 @@ public class TotaisServlet extends HttpServlet {
 		request.setAttribute("saldo", saldoF);
 		request.setAttribute("restante", restanteF);
 		
+		response.setContentType("text/html; charset=UTF-8");
 		RequestDispatcher rd = request.getRequestDispatcher("/formNovoProduto.jsp");
 		rd.forward(request, response);
 		

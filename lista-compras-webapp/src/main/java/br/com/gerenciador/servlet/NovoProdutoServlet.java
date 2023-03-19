@@ -30,6 +30,7 @@ public class NovoProdutoServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adiciona(produto);
 		
+		response.setContentType("text/html; charset=UTF-8");
 		response.sendRedirect("paginaCadastroTotais");
 		
 	}
