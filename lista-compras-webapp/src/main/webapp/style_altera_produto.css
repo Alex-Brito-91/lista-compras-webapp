@@ -8,7 +8,7 @@
 	url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@200;400&family=Sofia+Sans+Semi+Condensed&display=swap')
 	;
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 3840px) {
 	* {
 		margin: 0;
 		padding: 0;
