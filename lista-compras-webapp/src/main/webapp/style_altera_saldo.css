@@ -78,7 +78,7 @@
 		height: 28px;
 		background-color: #FFFFFF;
 		color: #000000;
-		margin-top: 5px;
+		margin-top: 15px;
 		text-align: center;
 		font-size: 16px;
 		margin-bottom: 15px;
@@ -92,7 +92,7 @@
 	.conteudo-altera-input {
 		font-family: FreeMono, monospace;
 		font-size: 19px;
-		width: 110%;
+		width: 120%;
 		height: 40px;
 		border: none;
 		border-radius: 10px;
@@ -103,7 +103,7 @@
 	.conteudo-altera-voltar {
 		font-family: FreeMono, monospace;
 		font-size: 19px;
-		width: 110%;
+		width: 120%;
 		height: 40px;
 		border: none;
 		border-radius: 10px;

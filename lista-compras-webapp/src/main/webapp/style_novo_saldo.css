@@ -76,8 +76,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-family: FreeMono, monospace;
-		font-size: 19px;
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-size: 28px;
+		font-weight: 400;
 	}
 	.div-input-alimentacao1,
 	.div-input-alimentacao2,
