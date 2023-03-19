@@ -46,8 +46,10 @@
 						Quantidade<br>
 						<input class="conteudo-cadastro-input-quant" type="text" name="quant" />
 					</div>
-					<input class="botao-input-cadastrar" type="submit" value="cadastrar" /><br>
-					<button class="botao-input-lista" formaction="listaProdutos">ver lista</button>
+					<div class="conteudo-cadastro-botoes">
+						<input class="botao-input-cadastrar" type="submit" value="cadastrar" />
+						<button class="botao-input-lista" formaction="listaProdutos">ver lista</button>
+					</div>
 				</form>
 			</div>
 		</section>

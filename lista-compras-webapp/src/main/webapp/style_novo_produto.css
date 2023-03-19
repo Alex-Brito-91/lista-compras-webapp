@@ -81,7 +81,7 @@
 	}
 	.conteudo-cadastro-tema {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
-		font-weight: 500;
+		font-weight: bold;
 		font-size: 40px;
 		margin-bottom: 20px;
 	}
@@ -126,6 +126,11 @@
 		color: #000000;
 		margin-bottom: 20px;
 	}
+	.conteudo-cadastro-botoes {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
 	.botao-input-cadastrar {
 		font-family: FreeMono, monospace;
 		font-size: 19px;
@@ -133,9 +138,9 @@
 		border: none;
 		border-radius: 10px;
 		background-color: #0E7405;
-		width: 40%;
+		width: 110%;
 		height: 40px;
-		margin: 0 auto;
+		margin-bottom: 10px;
 	}
 	.botao-input-cadastrar:hover {
 		background-color: #15969D;
@@ -147,9 +152,8 @@
 		border: none;
 		border-radius: 10px;
 		background-color: #0E7405;
-		width: 40%;
+		width: 110%;
 		height: 40px;
-		margin: 0 auto;
 	}
 	.botao-input-lista:hover {
 		background-color: #15969D;
