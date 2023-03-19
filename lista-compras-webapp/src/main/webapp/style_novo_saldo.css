@@ -22,34 +22,32 @@
 	.cabecalho-saldo {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
-		padding: 20px;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2%;
 	}
 	.cabecalho-imagem-saldo {
-		margin-top: 10px;
 		height: 75px;
-		width: 35%;
-		padding-left: 10px;
+		padding-left: 50px;
+		padding-right: 30px;
 	}
 	.cabecalho-menu-saldo {
 		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
+		flex-flow: row wrap;
+		gap: 10px;
 	}
 	.cabecalho-menu-item-saldo {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
 		font-weight: 400;
-		font-size: 25px;
-		text-align: center;
+		font-size: 26px;
 		color: #000000;
-		margin-top: 10px;
+		padding-right: 25px;
 	}
 	.cabecalho-menu-item-saldo:hover {
 		color: #45B606;
 	}
 	.conteudo {
-		border-top: 0.4px solid #45B606;
+		border-top: 2px solid #45B606;
 		padding: 30px;
 	}
 	.conteudo-principal {
@@ -62,7 +60,7 @@
 		max-width: 500px;
 		height: auto;
 		background-color: #91F689;
-		border: 1px solid #084D02;
+		border: 2px solid #084D02;
 		border-radius: 20px;
 	}
 	.conteudo-principal-tema {
@@ -101,8 +99,8 @@
 	}
 	.botao-cadastrar {
 		margin-top: 30px;
-		font-family: FreeMono, monospace;
-		font-size: 19px;
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-size: 26px;
 		width: 35%;
 		height: 40px;
 		border: none;
@@ -112,6 +110,6 @@
 		margin-bottom: 30px;
 	}
 	.rodape {
-		border-top: 0.4px solid #45B606;
+		border-top: 2px solid #45B606;
 	}
 }
