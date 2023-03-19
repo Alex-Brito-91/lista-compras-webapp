@@ -21,9 +21,9 @@
 	}
 	.cabecalho-imagem {
 		margin-top: 10px;
-		height: 75px;
-		width: 35%;
-		padding-left: 10px;
+		width: 10%;
+		height: auto;
+		padding-top: 10%;
 	}
 	.cabecalho {
 		display: flex;
@@ -33,17 +33,15 @@
 	}
 	.cabecalho-menu {
 		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		flex-wrap: wrap;
+		flex-flow: column wrap;
 	}
 	.cabecalho-menu-item {
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
 		font-weight: 400;
 		font-size: 25px;
-		text-align: center;
+		text-align: left;
 		color: #000000;
-		margin-top: 10px;
+		padding-bottom: 10%;
 	}
 	.cabecalho-menu-item:hover {
 		color: #45B606;
@@ -112,7 +110,6 @@
 		text-align: center;
 	}
 	.section-botoes {
-		padding: 30px;
 		align-items: center;
 	}
 	.botao-voltar {
