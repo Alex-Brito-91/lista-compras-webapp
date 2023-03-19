@@ -35,8 +35,8 @@
 					</div>
 					<input type="hidden" name="id" value="${produto.id}"><br>
 					<div class="conteudo-altera-botoes">
-						<button class="conteudo-altera-voltar" onclick="history.back()">voltar</button><br>
-						<input class="conteudo-altera-input" type="submit" value="alterar" /><br>
+						<input class="conteudo-altera-input" type="submit" value="alterar" />
+						<button class="conteudo-altera-voltar" onclick="history.back()">voltar</button>
 					</div>
 				</form>
 			</div>
