@@ -2,27 +2,24 @@ package br.com.gerenciador.servlet;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.text.DecimalFormat;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 @WebServlet("/novoSaldo")
 public class NovoSaldoServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		System.out.println("cadastrando novo saldo");
-		
-		BigDecimal valeAlimentacao1 = new BigDecimal(request.getParameter("vale1").replaceAll(",", "."));
-		BigDecimal valeAlimentacao2 = new BigDecimal(request.getParameter("vale2").replaceAll(",", "."));
-		BigDecimal dinheiro = new BigDecimal(request.getParameter("dinheiro").replaceAll(",", "."));
+    private static final long serialVersionUID = 1L;
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        System.out.println("cadastrando novo saldo");
+
+        BigDecimal valeAlimentacao1 = toBigDecimal(request.getParameter("vale1"));
+		BigDecimal valeAlimentacao2 = toBigDecimal(request.getParameter("vale2"));
+		BigDecimal dinheiro = toBigDecimal(request.getParameter("dinheiro"));
 		
 		Saldo saldo = new Saldo();
 		saldo.setAlimentacao1(valeAlimentacao1);
@@ -33,7 +30,14 @@ public class NovoSaldoServlet extends HttpServlet {
 		banco.adicionaSaldo(saldo);
 		
 		response.sendRedirect("listaSaldo");
-		
+
+    }
+
+    private BigDecimal toBigDecimal(String value) {
+		if (value == null || value.trim().isEmpty()) {
+			return BigDecimal.ZERO;
+		}
+		return new BigDecimal(value.replaceAll(",", "."));
 	}
-	
+
 }
