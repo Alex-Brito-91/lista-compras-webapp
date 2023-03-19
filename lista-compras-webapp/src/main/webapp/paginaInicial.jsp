@@ -23,7 +23,7 @@
 			<section class="conteudo-principal">
 				<div class="conteudo-principal-escrito">
 					<h1 class="conteudo-principal-escrito-titulo">Lista de Compras</h1>
-					<h2 class="conteudo-principal-escrito-subtitulo">Uma lista para cadastrar e calcular suas compras</h2>
+					<h2 class="conteudo-principal-escrito-subtitulo">Uma lista para organizar suas compras</h2>
 					<a class="texto-botao-comecar" href="formNovoSaldo.jsp">
 						<button class="conteudo-principal-escrito-botao">Começar!</button>
 					</a>
