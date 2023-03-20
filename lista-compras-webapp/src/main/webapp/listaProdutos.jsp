@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=iso-8859-1"
+	pageEncoding="iso-8859-1"%>
 <%@ page import="java.util.List, br.com.gerenciador.servlet.Produto"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv= "Content-Type" content= "text/html; charset=iso-8859-1" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lista de Produtos</title>
 <link rel="stylesheet" type="text/css" href="style_lista_produto.css">
@@ -17,7 +17,7 @@
 		<a class="cabecalho-imagem" href="paginaInicial.jsp"> <img
 			src="imagens/shopping-basket.png" alt="logo do carrinho"></a>
 		<nav class="cabecalho-menu">
-			<a class="cabecalho-menu-item" href="paginaInicial.jsp">PÃ¡gina
+			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página
 				Inicial</a> <a class="cabecalho-menu-item" href="listaSaldo">Seu
 				Saldo</a> <a class="cabecalho-menu-item" href="paginaCadastroTotais">Cadastro
 				de Produtos</a> <a href="limpaLista"> <input

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=iso-8859-1"
+	pageEncoding="iso-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ page import="java.util.List"%>
@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv= "Content-Type" content= "text/html; charset=iso-8859-1" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="style_novo_produto.css">
 <title>Cadastro de Produto</title>
@@ -18,7 +18,7 @@
 		<a class="cabecalho-imagem" href="paginaInicial.jsp"> <img
 			src="imagens/shopping-basket.png" alt="logo do carrinho"></a>
 		<nav class="cabecalho-menu">
-			<a class="cabecalho-menu-item" href="paginaInicial.jsp">PÃ¡gina
+			<a class="cabecalho-menu-item" href="paginaInicial.jsp">Página
 				Inicial</a> <a class="cabecalho-menu-item" href="listaSaldo">Seu
 				Saldo</a> <a class="cabecalho-menu-item" href="listaProdutos">Lista
 				de Produtos</a>

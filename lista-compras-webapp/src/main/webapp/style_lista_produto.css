@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "iso-8859-1";
 
 @import
 	url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed&family=Sofia+Sans+Semi+Condensed&display=swap')
@@ -7,7 +7,7 @@
 @import
 	url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed:wght@200;400&family=Sofia+Sans+Semi+Condensed&display=swap')
 	;
-
+	
 @media only screen and (max-width: 3840px) {
 	* {
 		margin: 0;
@@ -92,7 +92,7 @@
 	.cabecalho-tabela {
 		font-weight: bold;
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
-		font-size: 20px;
+		font-size: 22px;
 	}
 	.itens-conteudo-tabela:hover {
 		background-color: #FFFF00;
@@ -100,6 +100,7 @@
 	.conteudo-tabela {
 		text-align: center;
 		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-size: 22px;
 		border-bottom: 1px solid black;
 	}
 	.conteudo-principal-tabela-total {

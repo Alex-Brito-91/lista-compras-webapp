@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=iso-8859-1"
+	pageEncoding="iso-8859-1"%>
 <%@ page import="java.util.List, br.com.gerenciador.servlet.Saldo"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv= "Content-Type" content= "text/html; charset=iso-8859-1" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Saldo</title>
 <link rel="stylesheet" type="text/css" href="style_lista_saldo.css">
@@ -17,7 +17,7 @@
 		<a class="cabecalho-imagem" href="paginaInicial.jsp"> <img
 			src="imagens/shopping-basket.png" alt="logo do carrinho"></a>
 		<nav class="cabecalho-menu">
-			<a class="cabecalho-menu-item" href="paginaInicial.jsp">P√°gina
+			<a class="cabecalho-menu-item" href="paginaInicial.jsp">P·gina
 				Inicial</a> <a class="cabecalho-menu-item" href="paginaCadastroTotais">Cadastro
 				de Produtos</a> <a class="cabecalho-menu-item" href="listaProdutos">Lista
 				de Produtos</a>
@@ -31,7 +31,7 @@
 				<table class="tabela">
 					<c:forEach items="${saldos}" var="saldo">
 						<tr class="conteudo-alimentacao1">
-							<th class="tema-alimentacao">ALIMENTA√á√ÉO 1:</th>
+							<th class="tema-alimentacao">ALIMENTA«√O 1:</th>
 							<td class="valor-saldo">${saldo.alimentacao1}</td>
 							<td class="conteudo-altera-botoes" rowspan="3"><a
 								href="/lista-compras-webapp/mostraSaldo?id=${saldo.id}"> <input
@@ -43,7 +43,7 @@
 							</a></td>
 						</tr>
 						<tr class="conteudo-alimentacao2">
-							<th class="tema-alimentacao">ALIMENTA√á√ÉO 2:</th>
+							<th class="tema-alimentacao">ALIMENTA«√O 2:</th>
 							<td class="valor-saldo">${saldo.alimentacao2}</td>
 						</tr>
 						<tr class="conteudo-dinheiro">

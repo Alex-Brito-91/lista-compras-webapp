@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=iso-8859-1"
+	pageEncoding="iso-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv= "Content-Type" content= "text/html; charset=iso-8859-1" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description"
 	content="Um site para facilitar na hora de criar sua lista de compras">
@@ -31,7 +31,7 @@
 				<h2 class="conteudo-principal-escrito-subtitulo">Uma lista para
 					organizar suas compras</h2>
 				<a class="texto-botao-comecar" href="formNovoSaldo.jsp">
-					<button class="conteudo-principal-escrito-botao">ComeÃ§ar!</button>
+					<button class="conteudo-principal-escrito-botao">Começar!</button>
 				</a>
 			</div>
 			<img class="conteudo-principal-imagem" alt="carrinho de compras"
