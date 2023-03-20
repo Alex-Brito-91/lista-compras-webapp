@@ -20,17 +20,19 @@
 		background-color: #AED6F1;
 	}
 	.cabecalho {
-		align-items: left;
-		padding: 20px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2%;
 	}
 	.cabecalho-imagem {
-		margin-top: 10px;
 		height: 75px;
-		width: 35%;
-		padding-left: 10px;
+		padding-left: 50px;
+		padding-right: 30px;
 	}
 	.conteudo {
-		border-top: 0.4px solid #45B606;
+		border-top: 2px solid #45B606;
 		padding: 30px;
 	}
 	.conteudo-altera-section {
@@ -41,10 +43,10 @@
 	.conteudo-altera-div {
 		padding: 20px;
 		width: 100%;
-		max-width: 500px;
+		max-width: 400px;
 		height: auto;
 		background-color: #FFFA8C;
-		border: 1px solid #DBC700;
+		border: 2px solid #DBC700;
 		border-radius: 20px;
 	}
 	.conteudo-altera-tema {
@@ -99,26 +101,27 @@
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
+		align-items: center;
 	}
 	.conteudo-altera-input {
-		font-family: FreeMono, monospace;
-		font-size: 19px;
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-size: 26px;
 		color: white;
 		border: none;
 		border-radius: 10px;
 		background-color: #45B606;
-		width: 110%;
+		width: 180%;
 		height: 40px;
 		margin-bottom: 10px;
 	}
 	.conteudo-altera-voltar {
-		font-family: FreeMono, monospace;
-		font-size: 19px;
+		font-family: 'Sofia Sans Extra Condensed', sans-serif;
+		font-size: 26px;
 		color: white;
 		border: none;
 		border-radius: 10px;
 		background-color: #45B606;
-		width: 110%;
+		width: 180%;
 		height: 40px;
 		margin-bottom: 10px;
 	}
@@ -130,6 +133,6 @@
 	}
 	.rodape {
 		padding: 32px;
-		border-top: 0.4px solid #45B606;
+		border-top: 2px solid #45B606;
 	}
 }
