@@ -14,10 +14,10 @@
 </head>
 <body>
 	<header class="cabecalho-saldo">
-		<a class="cabecalho-imagem-saldo" href="paginaInicial.jsp"> <img
+		<a class="cabecalho-imagem-saldo" href="index.html"> <img
 			src="imagens/shopping-basket.png" alt="logo do carrinho"></a>
 		<nav class="cabecalho-menu-saldo">
-			<a class="cabecalho-menu-item-saldo" href="paginaInicial.jsp">Página
+			<a class="cabecalho-menu-item-saldo" href="index.html">Página
 				Inicial</a> <a class="cabecalho-menu-item-saldo"
 				href="paginaCadastroTotais">Cadastro de Produtos</a> <a
 				class="cabecalho-menu-item-saldo" href="listaProdutos">Lista de
