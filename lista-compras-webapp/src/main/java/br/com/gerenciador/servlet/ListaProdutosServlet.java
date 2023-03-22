@@ -33,7 +33,6 @@ public class ListaProdutosServlet extends HttpServlet {
 		request.setAttribute("saldoTotal", saldoF);
 		request.setAttribute("totalRestante", restanteF);
 		
-		response.setContentType("text/html; charset=iso-8859-1");
 		RequestDispatcher rd = request.getRequestDispatcher("/listaProdutos.jsp");
 		rd.forward(request, response);
 		
