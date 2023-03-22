@@ -13,43 +13,50 @@ import javax.servlet.http.HttpServletResponse;
 public class NovoProdutoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		if (!validarParametros(request)) {
+			mostrarMensagemDeErro(response);
+			return;
+		}
 
-	    String nome = request.getParameter("nome");
-	    BigDecimal valorUnitario = null;
-	    Integer quantidade = null;
+		Produto produto = criarNovoProduto(request);
+		Banco banco = new Banco();
+		banco.adiciona(produto);
 
-	    if (nome == null || nome.trim().isEmpty() || 
-	    		request.getParameter("nome") == null || request.getParameter("nome").trim().isEmpty() || 
-	            request.getParameter("valor") == null || request.getParameter("valor").trim().isEmpty() || 
-	            request.getParameter("quant") == null || request.getParameter("quant").trim().isEmpty()) {
-
-	        response.setContentType("text/html;charset=UTF-8");
-	        PrintWriter out = response.getWriter();
-	        out.println("<script type=\"text/javascript\">");
-	        out.println("alert('Por favor, preencha todos os campos antes de cadastrar!');");
-	        out.println("window.history.back();");
-	        out.println("</script>");
-
-	    } else {
-
-	        valorUnitario = new BigDecimal(request.getParameter("valor").replaceAll(",", "."));
-	        quantidade = Integer.parseInt(request.getParameter("quant"));
-	        BigDecimal valorTotal = valorUnitario.multiply(BigDecimal.valueOf(quantidade));
-	        Produto produto = new Produto();
-	        produto.setNome(nome);
-	        produto.setValorUnitario(valorUnitario);
-	        produto.setQuantidade(quantidade);
-	        produto.setValorTotal(valorTotal);
-
-	        Banco banco = new Banco();
-	        banco.adiciona(produto);
-
-	        response.setContentType("text/html; charset=iso-8859-1");
-	        response.sendRedirect("paginaCadastroTotais");
-
-	    }
+		response.sendRedirect("paginaCadastroTotais");
 	}
 
+	private boolean validarParametros(HttpServletRequest request) {
+		String nome = request.getParameter("nome");
+		String valor = request.getParameter("valor");
+		String quant = request.getParameter("quant");
 
+		return nome != null && !nome.trim().isEmpty() &&
+				valor != null && !valor.trim().isEmpty() &&
+				quant != null && !quant.trim().isEmpty();
+	}
+
+	private void mostrarMensagemDeErro(HttpServletResponse response) throws IOException {
+		PrintWriter out = response.getWriter();
+		out.println("<script type=\"text/javascript\">");
+		out.println("alert('Por favor, preencha todos os campos antes de cadastrar!');");
+		out.println("window.history.back();");
+		out.println("</script>");
+	}
+
+	private Produto criarNovoProduto(HttpServletRequest request) {
+		String nome = request.getParameter("nome");
+		BigDecimal valorUnitario = new BigDecimal(request.getParameter("valor").replaceAll(",", "."));
+		Integer quantidade = Integer.parseInt(request.getParameter("quant"));
+		BigDecimal valorTotal = valorUnitario.multiply(BigDecimal.valueOf(quantidade));
+
+		Produto produto = new Produto();
+		produto.setNome(nome);
+		produto.setValorUnitario(valorUnitario);
+		produto.setQuantidade(quantidade);
+		produto.setValorTotal(valorTotal);
+
+		return produto;
+	}
 }
